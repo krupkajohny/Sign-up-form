@@ -3,6 +3,7 @@
 
 /****** Selecting DOM elements *******/
 const form = document.querySelector(".signUpForm");
+const elButton = document.querySelector(".submitBtn");
 
 //inputs
 const inputFirstName = document.querySelector(".firstName");
@@ -79,7 +80,7 @@ const passConfirmCheck = (inputPass, msgEl, inputConfirm) => {
 /****** Event listeners *******/
 
 // form inputValidation on the button submit (Create Account)
-form.addEventListener("submit", (e) => {
+elButton.addEventListener("click", (e) => {
   e.preventDefault();
 
   // inputFirstName inputValidation (empty input)

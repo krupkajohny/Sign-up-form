@@ -1,40 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
-  <title>Sign up form</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Sign up form Johny</title>
+  </head>
   <body>
-    <div class="image">
-      <div class="overlayText">
-        <h1>Zugspitze, Germany</h1>
+    <!-- THIS DIV HAS ABSOLUTE POSITION => OUT OF FLOW -->
+    <div class="mountain-bg-absolute"></div>
+    <!-- THIS DIV HAS ABSOLUTE POSITION => OUT OF FLOW -->
+
+    <div class="grid-2-colls-35-65">
+      <div class="top-row-left">
+        <div class="stripe-bg">
+          <h1>Zugspitze, Germany</h1>
+        </div>
       </div>
-    </div>
-    <main class="main">
-      <div class="topText">
-        <p class="paraOne">
+      <div class="top-row-right">
+        <p class="upper-para">
           If you want the best platform to launch your next mountain climbing
           objective, then let us organise your expedition and allow you to be
           the best climber you can be.
         </p>
-        <p class="paraTwo">
+        <p class="lower-para">
           We believe that our experience, combined with your enthusiasm and
           determination, will provide you with the best possible chance of
           standing on top of the world's greatest summits.
         </p>
       </div>
+      <div class="second-row-right">
+        <h2>Lets do this!</h2>
+        <form name="signUpForm" class="form grid-2-colls-equal">
+          <div class="input flex flex-column">
+            <label for="firstName">FIRST NAME</label>
+            <input type="text" name="firstName" class="firstName" />
+            <div class="firstNameMsg error"></div>
+          </div>
+          <div class="input flex flex-column">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" class="email" />
+            <div class="emailMsg error"></div>
+          </div>
+          <div class="input flex flex-column">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" class="firstPassword" />
+            <div class="firstPasswordMsg error"></div>
+          </div>
+          <div class="input flex flex-column">
+            <label for="lastName">LAST NAME</label>
+            <input type="text" name="lastName" class="lastName" />
+            <div class="lastNameMsg error"></div>
+          </div>
+          <div class="input flex flex-column">
+            <label for="phoneNumber">PHONE NUMBER</label>
+            <input type="tel" name="phoneNumber" class="phoneNumber" />
+            <div class="phoneNumberMsg error"></div>
+          </div>
+          <div class="input flex flex-column">
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirmPassword"
+              class="confirmPassword"
+            />
+            <div class="confirmPasswordMsg error"></div>
+          </div>
+        </form>
+      </div>
+     <div class="third-row-right">
+        <button value="submit" action="/" class="submitBtn">
+          Create Account
+        </button>
+        <p class="login-par" >Already have an Account? <a href="">Log In</a></p>
+    
+    </div>
 
-      <form name="signUpForm" class="signUpForm">
-        <div class="formContainer">
-          <h2>Let's do this!</h2>
-          <div class="form">
+    <!-- <main class="main-container grid-2-colls-35-65 grid--3-rows">
+      <section class="left-container grid grid--3-rows">
+        <div class="stripe">
+          <h1>Zugspitze, Germany</h1>
+        </div>
+      </section>
+
+      <section class="right-container">
+        <div class="upper-row">
+          <p class="upper-para">
+            If you want the best platform to launch your next mountain climbing
+            objective, then let us organise your expedition and allow you to be
+            the best climber you can be.
+          </p>
+          <p class="lower-para">
+            We believe that our experience, combined with your enthusiasm and
+            determination, will provide you with the best possible chance of
+            standing on top of the world's greatest summits.
+          </p>
+        </div>
+        <div class="form-row">
+          <h2>Lets do this!</h2>
+          <form name="signUpForm" class="form flex">
             <div class="input">
               <label for="firstName">FIRST NAME</label>
               <input type="text" name="firstName" class="firstName" />
               <div class="firstNameMsg error"></div>
             </div>
+            <div class="input">
+              <label for="email">EMAIL</label>
+              <input type="text" name="email" class="email" />
+              <div class="emailMsg error"></div>
+            </div>
+            <div class="input">
+              <label for="password">PASSWORD</label>
+              <input type="password" name="password" class="firstPassword" />
+              <div class="firstPasswordMsg error"></div>
+            </div>
+
             <div class="input">
               <label for="lastName">LAST NAME</label>
               <input type="text" name="lastName" class="lastName" />
@@ -42,21 +125,11 @@
             </div>
 
             <div class="input">
-              <label for="email">EMAIL</label>
-              <input type="text" name="email" class="email" />
-              <div class="emailMsg error"></div>
-            </div>
-            <div class="input">
               <label for="phoneNumber">PHONE NUMBER</label>
               <input type="tel" name="phoneNumber" class="phoneNumber" />
               <div class="phoneNumberMsg error"></div>
             </div>
 
-            <div class="input">
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" class="firstPassword" />
-              <div class="firstPasswordMsg error"></div>
-            </div>
             <div class="input">
               <label for="confirmPassword">CONFIRM PASSWORD</label>
               <input
@@ -66,16 +139,10 @@
               />
               <div class="confirmPasswordMsg error"></div>
             </div>
-          </div>
+          </form>
         </div>
-
-        <div class="createAccount">
-          <button value="submit" action="/" class="submitBtn">
-            Create Account
-          </button>
-          <p>Already have an Account? <a href="">Log In</a></p>
-        </div>
-      </form>
-    </main>
+        <div class="lower-row"></div>
+      </section>
+    </main> -->
   </body>
 </html>
