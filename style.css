@@ -252,8 +252,8 @@ MEDIA QUERIES  -  1rem = 10px, 1em = 16px
   }
 }
 
-/* max-width = 450px (1em=16px => 28.125*16 = 450px) */
-@media (max-width: 28.125em) {
+/* max-width = 450px (1em=16px => 28.1*16 = cca 450px) */
+@media (max-width: 28.1em) {
   .grid-2-colls-equal {
     display: block;
   }
