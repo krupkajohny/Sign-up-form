@@ -35,38 +35,45 @@
       <div class="second-row-right">
         <h2>Lets do this!</h2>
         <form name="signUpForm" class="form grid-2-colls-equal">
+          <!-- FIRST NAME -->
           <div class="input flex flex-column">
             <label for="firstName">FIRST NAME</label>
             <input type="text" name="firstName" class="firstName" />
             <div class="firstNameMsg error"></div>
           </div>
-          <div class="input flex flex-column">
-            <label for="email">EMAIL</label>
-            <input type="text" name="email" class="email" />
-            <div class="emailMsg error"></div>
-          </div>
-          <div class="input flex flex-column">
-            <label for="password">PASSWORD</label>
-            <input type="password" name="password" class="firstPassword" />
-            <div class="firstPasswordMsg error"></div>
-          </div>
+
+          <!-- LAST NAME -->
           <div class="input flex flex-column">
             <label for="lastName">LAST NAME</label>
             <input type="text" name="lastName" class="lastName" />
             <div class="lastNameMsg error"></div>
           </div>
+          
+          <!-- MAIL -->
+          <div class="input flex flex-column">
+            <label for="email">EMAIL</label>
+            <input type="text" name="email" class="email">
+            <div class="emailMsg error"></div>
+          </div>
+
+          <!-- PHONE -->
           <div class="input flex flex-column">
             <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="tel" name="phoneNumber" class="phoneNumber" />
+            <input type="tel" name="phoneNumclass" class="phoneNumber"/>
             <div class="phoneNumberMsg error"></div>
           </div>
+
+          <!-- PASS -->
+          <div class="input flex flex-column">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" class="firstPassword" />
+            <div class="firstPasswordMsg error"></div>
+          </div>
+        
+          <!-- PASS CONFIRM -->
           <div class="input flex flex-column">
             <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input
-              type="password"
-              name="confirmPassword"
-              class="confirmPassword"
-            />
+            <input type="password" name="confirmPassword" class="confirmPassword"/>
             <div class="confirmPasswordMsg error"></div>
           </div>
         </form>
