@@ -1,5 +1,9 @@
 # SIMPLE FORM VALIDATION
 
-## SIMPLE FORM VALIDATION
+# Live version: https://krupkajohny.github.io/sign-up-form/
 
-### SIMPLE FORM VALIDATION
+## HTML - exercising:
+
+## CSS - exercising:
+
+## JavaScript - exercising:
