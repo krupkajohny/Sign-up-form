@@ -1,6 +1,6 @@
 # SIMPLE FORM VALIDATION
 
-# Live version: https://krupkajohny.github.io/sign-up-form/
+# Live version: https://krupkajohny.github.io/Sign-up-form/
 
 ## CSS - exercising:
 
